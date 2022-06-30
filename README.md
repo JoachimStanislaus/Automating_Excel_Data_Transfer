@@ -3,20 +3,22 @@ Automating Excel File Transfers with GUI.
 
 Look how easy it is to use:
 
-    Download Exe Folder
-    Run Exe File!
+    GUI is self explanatory
+
 
 Features
 --------
 
 - Looks for useful data, cleans data removing empty cells & hidden cells, populating empty cells that make sense and collates data from all sheets into one Sheet in another workbook.
+- Useful Headers are checked for and used for data.
 - GUI built using Pyqt5
 - Excel Manipulation done using openpyxl
 
 Installation
 ------------
 
-Download Exe Folder
+Git Clone Project
+pyinstaller --onefile --noconsole Theresa.py
 
 Contribute
 ----------
