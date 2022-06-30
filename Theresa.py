@@ -109,9 +109,14 @@ def display(PortFromSheett):
 
         count = 1
         #print(Final_Dict)
-        for x in list(Final_Dict.values()):
-            filtered_Dict[count]={"Name of Service Provider (SP)":x["Name of Service Provider (SP)"],'Region':x['Region'],'Approved Capacity':x['Approved Capacity'],'Max Capacity':x['SMM Capacity'],'(b) Enrolment':x['Total'],'(c) Waitlist':x['Total\n(a + b + c)']}
-            count+=1
+        try:
+            for x in list(Final_Dict.values()):
+                filtered_Dict[count]={"Name of Service Provider (SP)":x["Name of Service Provider (SP)"],'Region':x['Region'],'Approved Capacity':x['Approved Capacity'],'Max Capacity':x['SMM Capacity'],'(b) Enrolment':x['Total'],'(c) Waitlist':x['Total\n(a + b + c)']}
+                count+=1
+        except: #First Exception for when Approved Capacity is removed
+            for x in list(Final_Dict.values()):
+                filtered_Dict[count]={"Name of Service Provider (SP)":x["Name of Service Provider (SP)"],'Region':x['Region'],'Approved Capacity':x['Approved Capacity'],'Max Capacity':'-','(b) Enrolment':x['Total'],'(c) Waitlist':x['Total\n(a + b + c)']}
+                count+=1
         count = 0
         print(filtered_Dict)
         update_data()
