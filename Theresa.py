@@ -202,7 +202,7 @@ def remove_hidden_columns(listdata):
 
 
 def standard_template():
-    sheet1 = new_wb["Dec 2021"] #Template Sheet
+    sheet1 = new_wb["Template"] #Template Sheet
     sheet2 = new_wb[PortToSheet] # Sheet to copy template to
     maxr = sheet1.max_row
     maxc = sheet1.max_column
