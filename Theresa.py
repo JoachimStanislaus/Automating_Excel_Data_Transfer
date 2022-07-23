@@ -1,5 +1,3 @@
-from ast import While
-from typing import Counter
 from openpyxl.utils import get_column_letter
 from openpyxl import Workbook, load_workbook
 import pandas as pd
