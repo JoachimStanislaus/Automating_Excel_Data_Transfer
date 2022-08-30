@@ -17,7 +17,7 @@ Features
 Installation
 ------------
 
-Git Clone Project
+Type in Terminal: 
 pyinstaller --onefile --noconsole Theresa.py
 
 Contribute
