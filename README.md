@@ -72,6 +72,14 @@ Install Dependencies
 pip install -r requirements.txt
 ```
 
+Run application
+------------
+```sh
+python3 Theresa.py 
+or
+python Theresa.py
+```
+
 Deactivate the Environment
 ------------
 
